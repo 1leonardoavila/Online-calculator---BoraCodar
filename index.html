@@ -15,33 +15,33 @@
 <body>
     <div id="calculator">
         <div id="display">
-            <div id="last-calc">1+1</div>
+            <div data-previous-operand id="last-calc">0 + 0</div>
             <div id="result">
                 <img src="assets/equals.svg" alt="sinal de igual">
-                <span>2</span>
+                <span data-current-operand>0</span>
             </div>
         </div>
         <div id="keybord">
-            <button class="secondary">CE</button>
-            <button>C</button>
-            <button><img src="assets/percent.svg" alt="percent"></button>
-            <button class="tertiary"><img src="assets/divide.svg" alt="divide"></button>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="tertiary"><img src="assets/x.svg" alt="x"></button>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="tertiary"><img src="assets/minus.svg" alt="minus"></button>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="tertiary"><img src="assets/plus.svg" alt="plus"></button>
+            <button data-all-clear class="secondary">CE</button>
+            <button data-delete>C</button>
+            <button data-operator><img src="assets/percent.svg" alt="percent"></button>
+            <button data-operator class="tertiary">/</button>
+            <button data-number>7</button>
+            <button data-number>8</button>
+            <button data-number>9</button>
+            <button data-operator class="tertiary">x</button>
+            <button data-number>4</button>
+            <button data-number>5</button>
+            <button data-number>6</button>
+            <button data-operator class="tertiary">-</button>
+            <button data-number>1</button>
+            <button data-number>2</button>
+            <button data-number>3</button>
+            <button data-operator class="tertiary">+</button>
             <button><img src="assets/plusminus.svg" alt="plusminus"></button>
-            <button>0</button>
-            <button>,</button>
-            <button class="quartiary"><img src="assets/result.svg" alt="result"></button>
+            <button data-number>0</button>
+            <button data-number>,</button>
+            <button data-equals class="quartiary"><img src="assets/result.svg" alt="result"></button>
         </div>
     </div>
 </body>
